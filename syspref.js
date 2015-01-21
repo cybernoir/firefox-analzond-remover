@@ -26,4 +26,5 @@ lockPref("browser.startup.page", 0);
 lockPref("browser.startup.homepage_override.mstone", "ignore");
 // new tab
 lockPref("browser.newtab.url", "about:blank");
-
+// Fix for http://net.ipcalf.com/
+lockPref("media.peerconnection.enabled", false);
