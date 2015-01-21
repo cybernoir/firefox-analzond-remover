@@ -33,4 +33,8 @@ lockPref("media.peerconnection.enabled", false);
 lockPref("browser.safebrowsing.downloads.enabled", false);
 // Disable Firefox Identity (for future releases, when they finally will insert this another anal zond)
 lockPref("dom.identity.enabled", false)
+// autoupdates
+lockPref("app.update.auto", false);
+lockPref("app.update.enabled", false);
+lockPref("app.update.silent", false);
 //TODO: Add those zonds, which are disabled by default in case stupid user enabled them manually
