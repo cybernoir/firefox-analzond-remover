@@ -28,3 +28,9 @@ lockPref("browser.startup.homepage_override.mstone", "ignore");
 lockPref("browser.newtab.url", "about:blank");
 // Fix for http://net.ipcalf.com/
 lockPref("media.peerconnection.enabled", false);
+// Go hard for privacy
+// Prevent sending hashes of downloaded files to google (and greatly speed up downloading in general):
+lockPref("browser.safebrowsing.downloads.enabled", false);
+// Disable Firefox Identity (for future releases, when they finally will insert this another anal zond)
+lockPref("dom.identity.enabled", false)
+//TODO: Add those zonds, which are disabled by default in case stupid user enabled them manually
