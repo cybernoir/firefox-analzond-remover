@@ -43,4 +43,11 @@ lockPref("dom.identity.enabled", false)
 lockPref("app.update.auto", false);
 lockPref("app.update.enabled", false);
 lockPref("app.update.silent", false);
+// openh264 automatic malicious download
+// TODO: Firefox does not respect those settings at all! Probably anal zond is not removable!
+lockPref("media.gmp-gmpopenh264.enabled", false);
+lockPref("media.gmp-gmpopenh264.provider.enabled", false);
+lockPref("media.gmp-gmpopenh264.autoupdate", false);
+lockPref("media.gmp-manager.log", true);
+lockPref("media.gmp-manager.url", "http://127.0.0.1/remove/anal/zond/");
 //TODO: Add those zonds, which are disabled by default in case stupid user enabled them manually
