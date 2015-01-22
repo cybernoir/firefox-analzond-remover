@@ -26,6 +26,12 @@ lockPref("browser.startup.page", 0);
 lockPref("browser.startup.homepage_override.mstone", "ignore");
 // new tab
 lockPref("browser.newtab.url", "about:blank");
+lockPref("browser.newtab.preload", false);
+lockPref("browser.newtabpage.enabled", false);
+lockPref("browser.newtabpage.directory.ping", "");
+lockPref("browser.newtabpage.directory.source", "data:application/json,{}");
+lockPref("browser.newtabpage.enhanced", false);
+lockPref("browser.newtabpage.introShown", false);
 // Fix for http://net.ipcalf.com/
 lockPref("media.peerconnection.enabled", false);
 // Go hard for privacy
