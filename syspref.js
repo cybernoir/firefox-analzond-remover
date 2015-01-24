@@ -47,4 +47,8 @@ lockPref("media.gmp-gmpopenh264.provider.enabled", false);
 lockPref("media.gmp-gmpopenh264.autoupdate", false);
 lockPref("media.gmp-manager.log", true);
 lockPref("media.gmp-manager.url", "http://127.0.0.1/remove/anal/zond/");
+// disable loop dns request
+lockPref("loop.enabled", false);
+lockPref("loop.throttled", false);
+lockPref("loop.throttled2", false);
 //TODO: Add those zonds, which are disabled by default in case stupid user enabled them manually
