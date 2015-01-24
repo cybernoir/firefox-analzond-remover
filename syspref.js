@@ -51,4 +51,6 @@ lockPref("media.gmp-manager.url", "http://127.0.0.1/remove/anal/zond/");
 lockPref("loop.enabled", false);
 lockPref("loop.throttled", false);
 lockPref("loop.throttled2", false);
+// disable OCSP
+lockPref("security.OCSP.enabled", 0);
 //TODO: Add those zonds, which are disabled by default in case stupid user enabled them manually
