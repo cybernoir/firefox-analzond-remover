@@ -37,14 +37,11 @@ lockPref("media.peerconnection.enabled", false);
 // Go hard for privacy
 // Prevent sending hashes of downloaded files to google (and greatly speed up downloading in general):
 lockPref("browser.safebrowsing.downloads.enabled", false);
-// Disable Firefox Identity (for future releases, when they finally will insert this another anal zond)
-lockPref("dom.identity.enabled", false)
 // autoupdates
 lockPref("app.update.auto", false);
 lockPref("app.update.enabled", false);
 lockPref("app.update.silent", false);
 // openh264 automatic malicious download
-// TODO: Firefox does not respect those settings at all! Probably anal zond is not removable!
 lockPref("media.gmp-gmpopenh264.enabled", false);
 lockPref("media.gmp-gmpopenh264.provider.enabled", false);
 lockPref("media.gmp-gmpopenh264.autoupdate", false);
