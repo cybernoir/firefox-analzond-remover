@@ -3,8 +3,6 @@
 // disable reports to NSA
 lockPref("browser.safebrowsing.enabled", false);
 lockPref("browser.safebrowsing.malware.enabled", false);
-// healthreport
-lockPref("datareporting.healthreport.uploadEnabled", false);
 // automated malicious requests
 lockPref("extensions.blocklist.enabled", false);
 lockPref("extensions.getAddons.cache.enabled", false);
@@ -32,8 +30,6 @@ lockPref("browser.newtabpage.directory.ping", "");
 lockPref("browser.newtabpage.directory.source", "data:application/json,{}");
 lockPref("browser.newtabpage.enhanced", false);
 lockPref("browser.newtabpage.introShown", false);
-// Fix for http://net.ipcalf.com/
-lockPref("media.peerconnection.enabled", false);
 // Go hard for privacy
 // Prevent sending hashes of downloaded files to google (and greatly speed up downloading in general):
 lockPref("browser.safebrowsing.downloads.enabled", false);
@@ -53,4 +49,24 @@ lockPref("loop.throttled", false);
 lockPref("loop.throttled2", false);
 // disable OCSP
 lockPref("security.OCSP.enabled", 0);
+// Prevent the use of SPDY, Websockets and WebRTC if not supported by the web proxy
+lockPref("media.peerconnection.enabled", false);
+lockPref("media.websocket.enabled", false);
+lockPref("network.websocket.enabled", false);
+lockPref("media.http.spdy.enabled", false);
+// Disable automatic form filling
+lockPref("signon.autofillForms", false);
+lockPref("signon.rememberSignons", false);
+// Typeahead find
+lockPref("accessibility.typeaheadfind", false);
+// Disable telemetry and health reporting
+lockPref("toolkit.telemetry.enabled", false);
+lockPref("datareporting.healthreport.uploadEnabled", false);
+lockPref("datareporting.policy.dataSubmissionEnabled", false);
+lockPref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
+lockPref("datareporting.healthreport.uploadEnabled", false);
+lockPref("toolkit.telemetry.enabled", false);
+lockPref("toolkit.telemetry.prompted", 2);
+// Crash reporter
+lockPref("breakpad.reportURL", "");
 //TODO: Add those zonds, which are disabled by default in case stupid user enabled them manually
