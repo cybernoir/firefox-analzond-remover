@@ -12,7 +12,7 @@ Privacy enhanced Firefox configuration
 
 ## Использование на других системах:
 
-- удалить Mozilla Maintenance Service, если он стоит
+- удалить *Mozilla Maintenance Service*, если он стоит
 - зайти в каталог, куда была установлена лиса (например, /usr/lib64/firefox)
-- скопировать содержимое файла local-settings.js в папку defaults/pref
-- создать в корне каталога файл mozilla.cfg с содержимым из syspref.js
+- скопировать файл *local-settings.js* в папку defaults/pref
+- создать в корне каталога файл mozilla.cfg с содержимым из *syspref.js*
