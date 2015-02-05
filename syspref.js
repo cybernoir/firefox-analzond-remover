@@ -69,4 +69,7 @@ lockPref("toolkit.telemetry.enabled", false);
 lockPref("toolkit.telemetry.prompted", 2);
 // Crash reporter
 lockPref("breakpad.reportURL", "");
+// URL malicious behaviour
+lockPref("keyword.enabled", false);
+lockPref("browser.fixup.alternate.enabled", false);
 //TODO: Add those zonds, which are disabled by default in case stupid user enabled them manually
