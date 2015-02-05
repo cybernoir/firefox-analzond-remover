@@ -72,4 +72,8 @@ lockPref("breakpad.reportURL", "");
 // URL malicious behaviour
 lockPref("keyword.enabled", false);
 lockPref("browser.fixup.alternate.enabled", false);
+// disable NSA experiments
+lockPref("dns.ttl-experiment.enabled", false);
+lockPref("experiments.enabled", false);
+lockPref("experiments.supported", false);
 //TODO: Add those zonds, which are disabled by default in case stupid user enabled them manually
